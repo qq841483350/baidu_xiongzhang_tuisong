@@ -59,7 +59,7 @@ if __name__=="__main__":
     # content1=wx.TextCtrl(win,pos=(185,5),size=(500,30),style = wx.TE_MULTILINE | wx.TE_RICH)
     content1=wx.TextCtrl(win,pos=(185,5),size=(500,30))
 
-    wx.StaticText(win,label="*请在下方填入URL，一行一个:)",pos=(100,40),size=(200,30))
+    wx.StaticText(win,label="*请在下方填入需要提交的URL地址，一行一个,然后点击提交",pos=(100,40),size=(500,30))
     content2=wx.TextCtrl(win,pos=(100,70),size=(640,550),style=wx.TE_MULTILINE|wx.TE_RICH)
     loadButton=wx.Button(win,label='提交'.decode('utf8'),pos=(690,5),size=(50,30))
     loadButton.Bind(wx.EVT_BUTTON,xiongzhang)  #这个按钮绑定xiongzhang这个函数
