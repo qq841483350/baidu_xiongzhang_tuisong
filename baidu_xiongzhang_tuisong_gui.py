@@ -2,7 +2,7 @@
 #python编写的百度熊掌号资源提交工具GUI,url一行一个
 import requests,time,wx,re
 def xiongzhang(event):
-    content_url=content2.GetValue()  #获取content3里的内容  获取到所有的URL
+    content_url=content2.GetValue()  #获取content2里的内容  获取到所有的URL
     if content_url:
         content_url=content_url+'\nhttp'  #为了正则匹配到最后一个URL，在最后加上一个换行和http
         urls=re.findall('(.*?)\s+',content_url)  #正则获取所有URL为一个列表
