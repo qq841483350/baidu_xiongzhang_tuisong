@@ -12,8 +12,8 @@ def xiongzhang(event):
         post_url=str(post_url).strip()
         # filecontents={'file':open('urls.txt','r')}  #如果把所有urls放到本地的urls.txt里每行一个，则用这种方法来推送
         # r=requests.post(post_url,files=filecontents)
-        if requests.post(post_url,data=tuisong_urls):  #开始推送
-            r=requests.post(post_url,data=tuisong_urls)
+        r=requests.post(post_url,data=tuisong_urls) #开始推送
+        if r:
             result=r.text.decode('utf8')
             print result
             # print result
